@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="4.2.12633" xml-version="3" flavor="j2se">
+  <property name="show-as-module" value="false" />
+  <property name="publish-architecture-artifacts" value="true" />
+  <property name="project-type" value="maven" />
+  <property name="hide-externals" value="true" />
+  <property name="parse-archive-in-archive" value="false" />
+  <property name="include-injected-dependency" value="false" />
+  <property name="relative-to" value="const(THIS_FILE)" />
+  <property name="action-set-mod" value="1" />
+  <property name="detail-mode" value="true" />
+  <property name="hide-deprecated" value="false" />
+  <property name="resolve-name-clashes" value="true" />
+  <property name="project-excluded" />
+  <property name="show-needs-to-compile" value="false" />
+  <classpath>
+    <classpathentry kind="lib" path="ddd-lab-infrastructure/target/ddd-lab-infrastructure-1.0-SNAPSHOT.jar" />
+    <classpathentry kind="lib" path="ddd-lab-application/target/ddd-lab-application-1.0-SNAPSHOT.jar" />
+    <classpathentry kind="lib" path="ddd-lab-domain/target/ddd-lab-domain-1.0-SNAPSHOT.jar" />
+  </classpath>
+  <pom-root-files>
+    <pom path="pom.xml" />
+  </pom-root-files>
+  <transformations>
+    <transformation in="*" out="{jar}.*" />
+  </transformations>
+  <restructuring>
+    <set version="3" name="Model 1" hiview="Codemap" active="true" todo="false" list="0" />
+  </restructuring>
+  <sourcepaths>
+    <pathentry type="file" path="/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-infrastructure/src/main/java" />
+    <pathentry type="file" path="/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-application/src/main/java" />
+    <pathentry type="file" path="/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java" />
+  </sourcepaths>
+  <grid-set sep="." version="4.2.12633" />
+</local-project>

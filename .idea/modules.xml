@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ddd-lab.iml" filepath="$PROJECT_DIR$/ddd-lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddd-lab-application/ddd-lab-application.iml" filepath="$PROJECT_DIR$/ddd-lab-application/ddd-lab-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddd-lab-domain/ddd-lab-domain.iml" filepath="$PROJECT_DIR$/ddd-lab-domain/ddd-lab-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddd-lab-infrastructure/ddd-lab-infrastructure.iml" filepath="$PROJECT_DIR$/ddd-lab-infrastructure/ddd-lab-infrastructure.iml" />
+    </modules>
+  </component>
+</project>
