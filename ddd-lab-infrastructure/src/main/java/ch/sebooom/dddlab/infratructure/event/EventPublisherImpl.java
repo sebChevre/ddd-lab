@@ -10,7 +10,7 @@ import reactor.bus.EventBus;
  * <p>
  * ${VERSION}
  */
-public class EventPublisher {
+public class EventPublisherImpl {
 
     @Autowired
     private EventBus eventBus;
