@@ -1,2 +1,6 @@
 /Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/model/demande/Demande.java
+/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/common/DomainEvent.java
 /Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/repository/demande/DemandeRepository.java
+/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/common/Entity.java
+/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/event/DemandeInitialiseEvent.java
+/Users/seb/Dropbox/DEV/ddd-lab/ddd-lab-domain/src/main/java/event/EventPublisher.java

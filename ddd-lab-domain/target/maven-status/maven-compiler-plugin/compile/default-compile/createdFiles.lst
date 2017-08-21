@@ -1,2 +1,6 @@
+common/DomainEvent.class
 model/demande/Demande.class
+event/EventPublisher.class
 repository/demande/DemandeRepository.class
+event/DemandeInitialiseEvent.class
+common/Entity.class

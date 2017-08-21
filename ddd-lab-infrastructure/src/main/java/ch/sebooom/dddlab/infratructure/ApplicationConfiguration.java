@@ -1,6 +1,6 @@
 package ch.sebooom.dddlab.infratructure;
 
-import ch.sebooom.dddlab.infratructure.event.EventPublisher;
+import ch.sebooom.dddlab.infratructure.event.EventPublisherImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.Environment;
@@ -26,7 +26,7 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    EventPublisher eventPublisher(){
-        return new EventPublisher();
+    EventPublisherImpl eventPublisher(){
+        return new EventPublisherImpl();
     }
 }

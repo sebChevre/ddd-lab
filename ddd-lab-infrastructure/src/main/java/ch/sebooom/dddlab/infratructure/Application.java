@@ -6,11 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ImportResource;
 import reactor.bus.EventBus;
 
 import java.util.Arrays;
-
-import static reactor.bus.selector.Selectors.$;
 
 /**
  * @Configuration tags the class as a source of bean definitions for the application context.
@@ -22,6 +21,7 @@ import static reactor.bus.selector.Selectors.$;
  * configurations, and services in the hello package, allowing it to find the controllers.
  */
 @SpringBootApplication
+@ImportResource({"file:/application.xml"})
 public class Application {
 
     @Autowired

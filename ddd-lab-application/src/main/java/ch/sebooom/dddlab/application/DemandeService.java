@@ -10,4 +10,6 @@ import model.demande.Demande;
 public interface DemandeService {
 
     Demande findDemande();
+
+    void initilise();
 }

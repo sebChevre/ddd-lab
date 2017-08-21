@@ -4,6 +4,7 @@ import ch.sebooom.dddlab.application.DemandeService;
 import model.demande.Demande;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,8 +18,13 @@ public class DemandeController {
     @Autowired
     DemandeService demandeService;
 
-    @RequestMapping("/demande")
-    public Demande index() {
+    @RequestMapping(method = RequestMethod.GET, value = "/demande")
+    public Demande getDemande() {
         return demandeService.findDemande();
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/demande")
+    public void initiliseDemande() {
+         demandeService.initilise();
     }
 }

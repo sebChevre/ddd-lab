@@ -1,7 +1,7 @@
 package ch.sebooom.dddlab.infratructure.service;
 
 import ch.sebooom.dddlab.application.DemandeService;
-import ch.sebooom.dddlab.infratructure.event.EventPublisher;
+import ch.sebooom.dddlab.infratructure.event.EventPublisherImpl;
 import event.DemandeInitialiseEvent;
 import model.demande.Demande;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class DemandeServiceImpl implements DemandeService{
     private DemandeRepository demandeRepository;
 
     @Autowired
-    EventPublisher eventPublisher;
+    EventPublisherImpl eventPublisher;
 
 
     @Override
@@ -28,5 +28,14 @@ public class DemandeServiceImpl implements DemandeService{
         Demande demande = demandeRepository.findDemande();
         eventPublisher.publish(new DemandeInitialiseEvent("test ok event"));
         return demande;
+    }
+
+    @Override
+    public void initilise() {
+        Demande demande = Demande.newInstance();
+
+        demande.initialise();
+
+
     }
 }
